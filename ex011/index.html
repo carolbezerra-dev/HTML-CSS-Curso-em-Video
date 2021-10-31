@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mídias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>
+  <p>Tente abrir esse site em vários dispositivos diferentes ou, simplesmente, aumente e diminua o tamanho do seu navegador.</p>
+  <picture>
+    <!-- é quase um if/else em HTML, a ordem importa, do menor para o maior -->
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/">
+    <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="Imgaem Flexível">
+  </picture>
+
+  <h1>Reproduzindo Áudio</h1>
+  <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+  <audio src="midia/notification.mp3" controls autoplay></audio>
+  <!-- para ter compatibilidade com todos os navegadores, o áudio precisa estar disponível nos tipos MP3, WAV e OGG -->
+  <audio preload="metadata" autoplay controls loop>
+    <source src="midia/notification.mp3" type="audio/mpeg">
+    <source src="midia/notification.wav" type="audio/wav">
+    <!-- geralmente, wav é muito pesado -->
+    <source src="midia/notification.ogg" type="audio/ogg">
+    <p>Infelizmente, seu navegador não consegue reproduzir áudio. <a href="midia/notification.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+  </audio>
+  <!-- novamente, é como se fosse um if/else em HTML, porque o navegador vai tentando de cima pra baixo reproduzir -->
+</body>
+</html>
