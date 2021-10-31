@@ -4,7 +4,8 @@ São 5 módulos, cada um em sua branch.
 Abaixo estão os links das playlists para os vídeos no Youtube.
 
 ## Módulo 1
-https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n
+[Link para a playlist no Youtube](https://www.youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n)
+### Principais tópicos:
 - Conhecendo as tags;
 - Trabalhando com mídias (imagens, áudios e vídeos);
 - Introdução ao CSS;
